@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { useCart, Order } from '@/contexts/CartContext';
+import { PaymentDetails } from '@/components/PaymentDetails';
 import { cn } from '@/lib/utils';
 
 type PaymentMethod = 'cartao' | 'boleto' | 'pix';
@@ -192,6 +193,10 @@ export default function Cart() {
                     </div>
                   ))}
                 </RadioGroup>
+
+                <div className="mt-4">
+                  <PaymentDetails method={paymentMethod} total={getTotal()} />
+                </div>
               </CardContent>
             </Card>
 
