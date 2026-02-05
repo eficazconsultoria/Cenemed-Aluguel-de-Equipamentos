@@ -21,12 +21,11 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/catalogo" className="flex items-center gap-2">
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary-foreground tracking-tight">
-              CENEMED
-            </span>
-            <span className="text-[10px] text-primary-foreground/80 -mt-1">
-              Equipamentos Médicos
-            </span>
+            <img
+              src="/logo.png"
+              alt="Cenemed"
+              className="h-10 w-auto"
+            />
           </div>
         </Link>
 

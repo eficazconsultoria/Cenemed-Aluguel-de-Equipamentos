@@ -57,12 +57,11 @@ export default function Login() {
           <CardHeader className="text-center space-y-4">
             <div className="mx-auto w-fit">
               <div className="flex flex-col items-center">
-                <span className="text-3xl font-bold text-primary tracking-tight">
-                  CENEMED
-                </span>
-                <span className="text-sm text-muted-foreground">
-                  Equipamentos Médicos
-                </span>
+                <img
+                  src="/logo.png"
+                  alt="Cenemed"
+                  className="h-10 w-auto"
+                />
               </div>
             </div>
             <div>
